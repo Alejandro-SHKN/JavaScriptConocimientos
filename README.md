@@ -1,2 +1,1 @@
 # JavaScriptConocimientos
-# JavaScriptConocimientos
