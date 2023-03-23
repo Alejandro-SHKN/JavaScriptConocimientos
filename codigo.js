@@ -71,3 +71,24 @@
 // frase = saludo + sp + pregunta;
 
 // document.write(`${frase}`)
+
+
+// //Operadores de Comparación
+// == Igualdad: comprueba si dos valores son iguales, convirtiendo los tipos de datos si es necesario.
+// === Igualdad estricta: comprueba si dos valores son iguales, sin realizar ninguna conversión de tipo de datos.
+// (!=) Desigualdad: comprueba si dos valores son diferentes, convirtiendo los tipos de datos si es necesario.
+// (!==) Desigualdad estricta: comprueba si dos valores son diferentes, sin realizar ninguna conversión de tipo de datos.
+// < Menor que: comprueba si el primer valor es menor que el segundo.
+// > Mayor que: comprueba si el primer valor es mayor que el segundo.
+// <= Menor o igual que: comprueba si el primer valor es menor o igual que el segundo.
+// >= Mayor o igual que: comprueba si el primer valor es mayor o igual que el segundo.
+
+// let numero = 13;
+// let numero2 = 13;
+
+// if (numero == numero2) {
+//   console.log(`Los numeros son iguales`);
+// } else {
+//   console.log(`Los numeros no son iguales`);
+  
+// }
