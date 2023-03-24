@@ -92,3 +92,25 @@
 //   console.log(`Los numeros no son iguales`);
   
 // }
+
+//Arrays
+// let frutas = ["banana", "manzana", "pera"];
+// document.write(frutas[0]);
+
+//Arrays asociativos
+//Los arrays asociativos necesitamos acceder a ellos con ("")
+// let pc = {
+//   nombre: "DaltoPC",
+//   procesador: "Intel Core I7",
+//   ram:"16GB",
+//   espacio:"1TB"
+// }
+
+// let nombre = (`${pc["nombre"]}`)
+// let procesador =  (`${pc["procesador"]}`)
+// let ram = (`${pc["ram"]}`)
+// let espacio = (`${pc["espacio"]}`)
+// document.write(`<br> El nombre de la PC es: <b>${nombre}</b>`);
+// document.write(`<br> La cantidad de RAM es: <b>${ram}</b>`);
+// document.write(`<br> El procesador es: <b>${procesador}</b>`);
+// document.write(`<br> El espacio es: <b>${espacio}</b>`);
