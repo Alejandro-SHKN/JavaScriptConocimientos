@@ -15,96 +15,211 @@ Pote de 1/4 KG -> $2.9 USD
 */
 
 //Coffla
-let dineroCoffla = prompt(`Con cuanto dinero cuentas Coffla`);
-
-if (dineroCoffla >=0.6 && dineroCoffla<1) {
-    alert(`Coffla, comprate el Helado de agua`)
-    alert(`Coffla, y te sobra ${dineroCoffla -0.6 }`)
+let dineroCoffla = prompt(`Por favor introduce cuanto dinero tienes Coffla`);
+while (isNaN(dineroCoffla || dineroCoffla == "")) {
+  alert(`Por favor introduce un numero como valor`);
+  dineroCoffla = prompt(`Por favor introduce cuanto dinero tienes Coffla`);
 }
-else if (dineroCoffla >=1 && dineroCoffla<1.6) {
-    alert(`Coffla, comprate el Helado de crema`)
-    alert(`Coffla, y te sobra ${dineroCoffla -1 }`)
+while (dineroCoffla == "") {
+  alert(`Por favor introduce un numero como valor`);
+  dineroCoffla = prompt(`Por favor introduce cuanto dinero tienes Coffla`);
 }
-else if (dineroCoffla >=1.6 && dineroCoffla<1.7) {
-    alert(`Coffla, comprate el Helado de marca Heladix`)
-    alert(`Coffla, y te sobra ${dineroCoffla -1.6 }`)
-}
-else if (dineroCoffla >=1.7 && dineroCoffla<1.8) {
-    alert(`Coffla, comprate el Helado de marca Heladovich`)
-    alert(`Coffla, y te sobra ${dineroCoffla -1.7 }`)
-}
-else if (dineroCoffla >=1.8 && dineroCoffla<2.9) {
-    alert(`Coffla, comprate el Helado de marca Heraldo`)
-    alert(`Coffla, y te sobra ${dineroCoffla -1.8 }`)
-}
-else if (dineroCoffla >=2.9) {
-    alert(`Coffla, comprate el potecito de helado con confites, o el pote de 1/4 KG`)
-    alert(`Coffla, y te sobra ${dineroCoffla -2.9 }`)
-}
-else{
-    alert(`Lo sentimos no cuentas con el dinero suficiente para poder comprar un helado`)
-}
-
-//Roberto
-let dineroRoberto = prompt(`Con cuanto dinero cuentas Roberto`);
-dineroRoberto = parseInt(dineroRoberto);
-
-if (dineroRoberto >=0.6 && dineroRoberto<1) {
-    alert(`Roberto, comprate el Helado de agua`)
-    alert(`Roberto, y te sobra ${dineroRoberto -0.6 }`)
-}
-else if (dineroRoberto >=1 && dineroRoberto<1.6) {
-    alert(`Roberto, comprate el Helado de crema`)
-    alert(`Roberto, y te sobra ${dineroRoberto -1 }`)
-}
-else if (dineroRoberto >=1.6 && dineroRoberto<1.7) {
-    alert(`Roberto, comprate el Helado de marca Heladix`)
-    alert(`Roberto, y te sobra ${dineroRoberto -1.6 }`)
-}
-else if (dineroRoberto >=1.7 && dineroRoberto<1.8) {
-    alert(`Roberto, comprate el Helado de marca Heladovich`)
-    alert(`Roberto, y te sobra ${dineroRoberto -1.7 }`)
-}
-else if (dineroRoberto >=1.8 && dineroRoberto<2.9) {
-    alert(`Roberto, comprate el Helado de marca Heraldo`)
-    alert(`Roberto, y te sobra ${dineroRoberto -1.8 }`)
-}
-else if (dineroRoberto >=2.9) {
-    alert(`Roberto, comprate el potecito de helado con confites, o el pote de 1/4 KG`)
-    alert(`Roberto, y te sobra ${dineroRoberto -2.9 }`)
-}
-else{
-    alert(`Lo sentimos no cuentas con el dinero suficiente para poder comprar un helado`)
+if (dineroCoffla >= 0.6 && dineroCoffla < 1) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado de agua que tiene un costo de: $0.6 USD`
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 0.6
+    }USD, tu helado costó: $0.6 USD`
+  );
+} else if (dineroCoffla >= 1 && dineroCoffla < 1.6) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado de crema que tiene un costo de: $1 USD`
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 1
+    }USD, tu helado costó: $1 USD`
+  );
+} else if (dineroCoffla >= 1.6 && dineroCoffla < 1.7) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado de heladix que tiene un costo de: $1.6 USD`
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 1.6
+    }USD, tu helado costó: $1.6 USD`
+  );
+} else if (dineroCoffla >= 1.7 && dineroCoffla < 1.8) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado de heladovich que tiene un costo de: $1.7 USD `
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 1.7
+    }USD, tu helado costó: $1.7 USD`
+  );
+} else if (dineroCoffla >= 1.8 && dineroCoffla < 2.9) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado de heraldo que tiene un costo de: $1.8 USD`
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 1.8
+    }USD, tu helado costó: $1.8 USD`
+  );
+} else if (dineroCoffla >= 2.9) {
+  alert(
+    `Coffla, con ${dineroCoffla} USD, te alcanza para el helado con confites o el pote de 1/4KG que tiene un costo de: $2.9 USD`
+  );
+  alert(
+    `De tus ${dineroCoffla} USD te restan: ${
+      Number(dineroCoffla) - 2.9
+    }USD, tu helado costó: $2.9 USD`
+  );
+} else {
+  alert(
+    `Lo sentimos, no cuentas con el dinero suficiente para poder comprar :(`
+  );
 }
 
 //Pedro
-let dineroPedro = prompt(`Con cuanto dinero cuentas Pedro`);
-dineroPedro = parseInt(dineroPedro);
+let dineroPedro = prompt(`Por favor introduce cuanto dinero tienes Pedro`);
+while (isNaN(dineroPedro || dineroPedro == "")) {
+  alert(`Por favor introduce un numero como valor`);
+  dineroPedro = prompt(`Por favor introduce cuanto dinero tienes Pedro`);
+}
+while (dineroPedro == "") {
+  alert(`Por favor introduce un numero como valor`);
+  dineroPedro = prompt(`Por favor introduce cuanto dinero tienes Pedro`);
+}
+if (dineroPedro >= 0.6 && dineroPedro < 1) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado de agua que tiene un costo de: $0.6 USD`
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 0.6
+    }USD, tu helado costó: $0.6 USD`
+  );
+} else if (dineroPedro >= 1 && dineroPedro < 1.6) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado de crema que tiene un costo de: $1 USD`
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 1
+    }USD, tu helado costó: $1 USD`
+  );
+} else if (dineroPedro >= 1.6 && dineroPedro < 1.7) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado de heladix que tiene un costo de: $1.6 USD`
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 1.6
+    }USD, tu helado costó: $1.6 USD`
+  );
+} else if (dineroPedro >= 1.7 && dineroPedro < 1.8) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado de heladovich que tiene un costo de: $1.7 USD `
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 1.7
+    }USD, tu helado costó: $1.7 USD`
+  );
+} else if (dineroPedro >= 1.8 && dineroPedro < 2.9) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado de heraldo que tiene un costo de: $1.8 USD`
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 1.8
+    }USD, tu helado costó: $1.8 USD`
+  );
+} else if (dineroPedro >= 2.9) {
+  alert(
+    `Pedro, con ${dineroPedro} USD, te alcanza para el helado con confites o el pote de 1/4KG que tiene un costo de: $2.9 USD`
+  );
+  alert(
+    `De tus ${dineroPedro} USD te restan: ${
+      Number(dineroPedro) - 2.9
+    }USD, tu helado costó: $2.9 USD`
+  );
+} else {
+  alert(
+    `Lo sentimos, no cuentas con el dinero suficiente para poder comprar :(`
+  );
+}
 
-if (dineroPedro >=0.6 && dineroPedro<1) {
-    alert(`Pedro, comprate el Helado de agua`)
-    // alert(`Pedro, y te sobra ${Math.round(dineroPedro -0.6)}`)
+//Roberto
+let dineroRoberto = prompt(`Por favor introduce cuanto dinero tienes Roberto`);
+while (isNaN(dineroRoberto || dineroRoberto == "")) {
+  alert(`Por favor introduce un numero como valor`);
+  dineroRoberto = prompt(`Por favor introduce cuanto dinero tienes Roberto`);
 }
-else if (dineroPedro >=1 && dineroPedro<1.6) {
-    alert(`Pedro, comprate el Helado de crema`)
-    alert(`Pedro, y te sobra ${dineroPedro -1 }`)
+while (dineroRoberto == "") {
+  alert(`Por favor introduce un numero como valor`);
+  dineroRoberto = prompt(`Por favor introduce cuanto dinero tienes Roberto`);
 }
-else if (dineroPedro >=1.6 && dineroPedro<1.7) {
-    alert(`Pedro, comprate el Helado de marca Heladix`)
-    alert(`Pedro, y te sobra ${dineroPedro -1.6 }`)
-}
-else if (dineroPedro >=1.7 && dineroPedro<1.8) {
-    alert(`Pedro, comprate el Helado de marca Heladovich`)
-    alert(`Pedro, y te sobra ${dineroPedro -1.7 }`)
-}
-else if (dineroPedro >=1.8 && dineroPedro<2.9) {
-    alert(`Pedro, comprate el Helado de marca Heraldo`)
-    alert(`Pedro, y te sobra ${dineroPedro -1.8 }`)
-}
-else if (dineroPedro >=2.9) {
-    alert(`Pedro, comprate el potecito de helado con confites, o el pote de 1/4 KG`)
-    alert(`Pedro, y te sobra ${dineroPedro -2.9 }`)
-}
-else{
-    alert(`Lo sentimos no cuentas con el dinero suficiente para poder comprar un helado`)
+if (dineroRoberto >= 0.6 && dineroRoberto < 1) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado de agua que tiene un costo de: $0.6 USD`
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 0.6
+    }USD, tu helado costó: $0.6 USD`
+  );
+} else if (dineroRoberto >= 1 && dineroRoberto < 1.6) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado de crema que tiene un costo de: $1 USD`
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 1
+    }USD, tu helado costó: $1 USD`
+  );
+} else if (dineroRoberto >= 1.6 && dineroRoberto < 1.7) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado de heladix que tiene un costo de: $1.6 USD`
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 1.6
+    }USD, tu helado costó: $1.6 USD`
+  );
+} else if (dineroRoberto >= 1.7 && dineroRoberto < 1.8) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado de heladovich que tiene un costo de: $1.7 USD `
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 1.7
+    }USD, tu helado costó: $1.7 USD`
+  );
+} else if (dineroRoberto >= 1.8 && dineroRoberto < 2.9) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado de heraldo que tiene un costo de: $1.8 USD`
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 1.8
+    }USD, tu helado costó: $1.8 USD`
+  );
+} else if (dineroRoberto >= 2.9) {
+  alert(
+    `Roberto, con ${dineroRoberto} USD, te alcanza para el helado con confites o el pote de 1/4KG que tiene un costo de: $2.9 USD`
+  );
+  alert(
+    `De tus ${dineroRoberto} USD te restan: ${
+      Number(dineroRoberto) - 2.9
+    }USD, tu helado costó: $2.9 USD`
+  );
+} else {
+  alert(
+    `Lo sentimos, no cuentas con el dinero suficiente para poder comprar :(`
+  );
 }
