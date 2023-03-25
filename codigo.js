@@ -65,13 +65,12 @@
 
 //Concatenación
 
-// saludo = "¡Hola Pedro!" 
+// saludo = "¡Hola Pedro!"
 // pregunta = "¿Cómo estás?"
 // sp = " ";
 // frase = saludo + sp + pregunta;
 
 // document.write(`${frase}`)
-
 
 // //Operadores de Comparación
 // == Igualdad: comprueba si dos valores son iguales, convirtiendo los tipos de datos si es necesario.
@@ -90,7 +89,7 @@
 //   console.log(`Los numeros son iguales`);
 // } else {
 //   console.log(`Los numeros no son iguales`);
-  
+
 // }
 
 //Arrays
@@ -114,3 +113,131 @@
 // document.write(`<br> La cantidad de RAM es: <b>${ram}</b>`);
 // document.write(`<br> El procesador es: <b>${procesador}</b>`);
 // document.write(`<br> El espacio es: <b>${espacio}</b>`);
+
+//Bucles de Interaccion
+
+// let numero = 0;
+
+// while (numero < 10) {
+//   numero++;
+//   document.write(`${numero} <br>`);
+// }
+
+// break
+// let numero = 0;
+// while (numero < 1000) {
+//   numero++
+//   document.write(`${numero} <br>`)
+//   if (numero == 500) {
+//     document.write(`fin`)
+//     break;
+//   }
+// }
+
+//For se compone por tres partes Declarar, Iniciar Iterar.
+
+// for(let i =0; i<=10; i++){
+//   document.write(`${i} <br>`)
+// }
+
+//Continue
+
+// let i = 0;
+// while (i<100) {
+//     i++;
+//     if (i==15) {
+//         continue;
+//     }
+//     document.write(`${i} <br>`);
+
+// }
+//for in/of
+
+// let animales =["gato", "perro", "tiranosaurio rex"];
+// for(animal in animales){
+//     document.write(`${animal} <br> `)
+// }
+// for(animal of animales){
+//     document.write(`${animal} <br>`)
+
+// }
+
+// array1 =["maria", "josefa", "roberta"];
+// array2 =["pedro", "marcelo", "julio"];
+
+// for(arrayUno in array1){
+//     document.write(`${arrayUno} <br>`)
+// }
+
+// for(arrayDos of array2){
+//     document.write(`${array2[2]} <br>`)
+// }
+
+//Funciones {}
+
+// function saludar() {
+//   respuesta = prompt(`Hola Pablo, ¿Cómo va tu día?`);
+//   if (respuesta == "bien") {
+//     alert(`Me alegro`);
+//   } else {
+//     alert(`Lamento oir eso`);
+//   }
+// }
+
+// saludar();
+// saludar();
+
+// return;
+// function saludar(){
+//     alert(`Hola`);
+//     return(`La funcion se ejecutó correctamente`);
+// }
+// let saludo = saludar();
+// document.write(`${saludo}`);
+
+// function preguntaDia(){
+//     prompt(`¿Cómo estuvo tu día?`);
+//     return (`Este es un return despúes del promt`);
+// }
+// let functíonReturn = preguntaDia();
+// preguntaDia();
+
+// document.write(`${preguntaDia()}`);
+
+//parámetros
+// let num1 = 32;
+// let num2 = 12;
+
+// function suma(){
+//     let res = num1 + num2;
+//     document.write(`${res}`)
+// }
+// suma();
+
+// function suma(){
+// let num1 = prompt(`Introduce tu primer numero a sumar`);
+// let num2 = prompt(`Introduce el segundo numero para sumar`);
+// let res = Number(num1) + Number(num2);
+// return res;
+// }
+// let resultado = suma();
+// document.write(`${resultado}`);
+
+// function suma(){
+//     let num1 = prompt(`Introduce tu primer numero para sumar`);
+//     while (isNaN(num1)|| num1=="") {
+//         alert(`Por favor introduce solo numeros`)
+//         num1 = prompt(`Introduce tu primer numero para sumar`);
+//     }
+//     let num2 = prompt(`Introduce el segundo número para sumar`);
+//     while (isNaN(num2)|| num2 =="") {
+//         alert(`Por favor introduce solo numeros`)
+//         num2 = prompt(`Introduce tu segundo numero para sumar`);
+//     }
+//     let res = Number(num1)+Number(num2);
+//     return res;
+// }
+
+// let resultadoSuma = suma();
+// document.write(`El resultado de la suma es ${resultadoSuma}`);
+
